@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="SemiColonWeb" />
+        <!-- Stylesheets
+        ============================================= -->
+        <!-- <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" /> -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+        <!-- Construction Demo Specific Stylesheet -->
+        
+        <!-- / -->
+        <link rel="stylesheet" href="css/dark.css" type="text/css" />
+        <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+        <link rel="stylesheet" href="css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+        <link rel="stylesheet" href="demos/construction/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="demos/construction/css/colors.css" type="text/css" />
+        <!-- Document Title
+        ============================================= -->
+        <title>BUTTER | GHEE</title>
+        <script src='https://www.google.com/recaptcha/api.js'>
+        </script>
+        <script type="text/javascript">
+        var v = document.getElementById('quick-contact-form-email').value
+        var value = function validEmail(v) {
+        var r = new RegExp("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+        return (v.match(r) == null) ? false : true;}
+        if(value == false)
+        alert("Incorrect Email Address");
+        </script>
+    </head>
+    <body class="stretched sticky-responsive-menu">
+        <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-96925277-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <script>
+        var tag = document.createElement('script');
+        tag.src = "//www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+        // Setup a callback for the YouTube api to attach video event handlers
+            window.onYouTubeIframeAPIReady = function(){
+                // Iterate through all videos
+                $('#slider.slider-parallax-inner iframe').each(function(){
+                    // Create a new player pointer; "this" is a DOMElement of the player's iframe
+                    var player = new YT.Player(this, {
+                        playerVars: {
+                            autoplay: 0
+                        }
+                    });
+        
+                    // Watch for changes on the player
+                    player.addEventListener("onStateChange", function(state){
+                        switch(state.data)
+                        {
+                            // If the user is playing a video, stop the slider
+                            case YT.PlayerState.PLAYING:
+                                slider.flexslider("pause")
+                                canSlide = false;
+                                break;
+                            // The video is no longer player, give the go-ahead to start the slider back up
+                            case YT.PlayerState.ENDED:
+                            case YT.PlayerState.PAUSED:
+                                slider.flexslider("play");
+                                canSlide = true;
+                                break;
+                        }
+                    });
+                    $(this).data('player', player);
+                });
+            }
+        
+            // Setup the slider control
+            slider = $("#slider.slider-parallax-inner")
+                .flexslider({
+                animation: "fade",
+                    easing: "swing",
+                    slideshowSpeed: 6500,
+                    animationSpeed: 900,
+                    pauseOnHover: true,
+                    pauseOnAction: true,
+                    touch: true,
+                    video: true,
+                    controlNav: true,
+                    animationLoop: true,
+                    slideshow: true,
+                    useCSS: false,
+                // Before you go to change slides, make sure you can!
+                                    before: function(){
+                    if(!canSlide)
+                        slider.flexslider("pause")
+                }
+                });
+            slider.on("click", ".flex-prev, .flex-next", function(){
+                canSlide = true;
+                $('.flexslider iframe').each(function(){
+                    $(this).data('player').pauseVideo();
+                });
+            });
+        };
+        </script>
+        <!-- Document Wrapper
+        ============================================= -->
+        <div id="wrapper" class="clearfix">
+            <!-- Top Bar
+            ============================================= -->
+            <div id="top-bar">
+                <div class="container clearfix">
+                    <div class="col_half nobottommargin clearfix">
+                        <!-- Top Social
+                        ============================================= -->
+                        <div id="top-social">
+                            <ul>
+                                <li><a href="https://www.facebook.com/DesiSawad-860958314055537/" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+                                <li><a href="https://twitter.com/Desisawad" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+                                <li><a href="https://www.pinterest.com/desisawad" class="si-pinterest"><span class="ts-icon"><i class="icon-pinterest"></i></span><span class="ts-text">Pinterest</span></a></li>
+                            </ul>
+                            </div><!-- #top-social end -->
+                        </div>
+                        <div class="col_half fright col_last clearfix nobottommargin">
+                            <!-- Top Links
+                            ============================================= -->
+                            <div class="top-links">
+                                <ul>
+                                    <li>
+                                        <a href="#">Locations</a>
+                                        <ul>
+                                            <li><a href="#">Lahore</a></li>
+                                            <li><a href="#">Kamalia</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#faqs"><div>FAQs</div></a></li>
+                                    <li><a href="#sendmessage"><div>Contact</div></a></li>
+                                </ul>
+                                </div><!-- .top-links end -->
+                            </div>
+                        </div>
+                        </div><!-- #top-bar end -->
+                        <!-- Header
+                        ============================================= -->
+                        <header id="header" class="sticky-style-2">
+                            <div class="container clearfix">
+                                <!-- Logo
+                                ============================================= -->
+                                <div id="logo">
+                                    <a href="index.html" class="standard-logo"><img src="images/desisawad-icon.png" alt="Canvas Logo"></a>
+                                    </div><!-- #logo end -->
+                                    <ul class="header-extras">
+                                        <!-- <li>
+                                            <i class="i-plain icon-call nomargin"></i>
+                                            <div class="he-text">
+                                                Order Now
+                                                <span>0345-4026891</span>
+                                            </div>
+                                        </li> -->
+                                        <li>
+                                            <a href="#footer" <i class="i-plain icon-line2-envelope nomargin"></i></a>
+                                            <div class="he-text">
+                                                Email Us
+                                                <span>desisawad@appsconz.com</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="i-plain icon-line-clock nomargin"></i>
+                                            <div class="he-text">
+                                                We'are Open
+                                                <span>Mon - Sat, 10AM to 7PM</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix" data-video-autoplay="false" data-loop = "true">
+                                <div class="slider-parallax-inner">
+                                    <div class="swiper-container swiper-parent">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide dark" style="background-image: url('images/services/price-4.jpg'); background-position: center top;">
+                                            </div>
+                                            <div class="swiper-slide dark">
+                                                <iframe id="youtubevideo" width="560" height="315" src="https://www.youtube.com/embed/4H6JHhPFb1s" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
+                                        <div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
+                                        <div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--
+                            <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix slider-parallax-visible" data-autoplay="10000" data-speed="650" data-loop="false" style="height: auto;">
+                                <div class="slider-parallax-inner" style="transform: translateY(0px);">
+                                    <div class="swiper-container swiper-parent">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide" style="background-image: url('images/services/price-4.jpg'); background-position: center top;">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <iframe id="youtubevideo" width="560" height="315" src="https://www.youtube.com/embed/4H6JHhPFb1s?enablejsapi=1&version=3&playerapiid=youtubevideo" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="slider-arrow-left" style="opacity: 1.26316;"><i class="icon-angle-left"></i></div>
+                                    <div id="slider-arrow-right" style="opacity: 1.26316;"><i class="icon-angle-right"></i></div>
+                                    <div id="slide-number"><div id="slide-number-current">1</div><span>/</span><div id="slide-number-total">3</div></div>
+                                </div>
+                            </div>
+                        </section>-->
+                        <!-- Content
+                        ============================================= -->
+                        <section id="content">
+                            <div class="content-wrap">
+                                <div class="promo promo-light promo-full uppercase  header-stick">
+                                    <div class="container clearfix">
+                                        <h3 style="letter-spacing: 2px;">Our Process</h3>
+                                        <img src="images\services\steps.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_full common-height">
+                                    <div class="col-md-12 dark col-padding ohidden" style="background-color: #F18052;">
+                                        <div class="container">
+                                            <h3 class="uppercase" style="font-weight: 600;">Our Story</h3>
+                                            <p style="line-height: 1.8; font-style:oblique; font-size:medium">We moved from Kamalia to Lahore in 2013. One of the problems that We faced in Lahore was to get pure products like Butter and Desi Ghee as pure as in Kamalia.  We used to bring these products with us from Kamalia to Lahore on weekly basis. We tried it from few places in Lahore but it had impurities and its taste was not even close to what it should taste. To ensure 100% quality, We built an animal farm in Kamalia from where we get pure milk and then we convert it into Butter and Desi Ghee. We believe there are lots of people in Lahore who are badly in need of pure products like these. This encouraged us to build DesiSawad.com where you can get 100% impurity free high quality Desi items like Desi Ghee and Butter.</p>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="section parallax" style="padding: 120px 0;" data-stellar-background-ratio="0.4">
+                                <div class="container clearfix">
+                                    <div id="section-testimonials" class="heading-block title-center page-section">
+                                        <h2>Testimonials</h2>
+                                        <span>What our valuable customers say about us</span>
+                                    </div>
+                                    <ul class="testimonials-grid grid-3 clearfix">
+
+                                    <li style="height: 197px;">
+                                            <div class="testimonial">
+                                                <div class="testi-content">
+                                                    <p>Ghee is fantastic in taste especially aroma is brilliant. After long time we ate pure organic and healthy thing. Same for butter. May Allah bless you people a lot and give Barakat (blessing ) in yours both things.</p>
+                                                    <div class="testi-meta">
+                                                        Hassan Mehmood
+                                                        <span>Riaz, Saudi Arabia</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li style="height: 197px;">
+                                            <div class="testimonial">
+                                                <div class="testi-content">
+                                                    <p>We tried Desi Ghee and Butter from DesiSawad and its taste and quality was amazing. Me and my whole family loves it.</p>
+                                                    <div class="testi-meta">
+                                                        Hanan Ahmad
+                                                        <span>Lahore Cantt</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="height: 197px;">
+                                            <div class="testimonial">
+                                                <div class="testi-content">
+                                                    <p>I ordered Butter from DesiSawad for experiment and it was very pure and light weight in taste because of its purity. Will definitely order more in future.</p>
+                                                    <div class="testi-meta">
+                                                        Aleem Razzaq
+                                                        <span>Johr Town Lahore</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="height: 197px;">
+                                            <div class="testimonial">
+                                                <div class="testi-content">
+                                                    <p>My greatest concern was that it should be impurity free and when I used Desi Ghee, I was totally satisfied with its quality. You hardly find such type of quality Ghee in Lahore.</p>
+                                                    <div class="testi-meta">
+                                                        Imran Mehmood
+                                                        <span>Township Lahore</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li style="height: 197px;">
+                                            <div class="testimonial">
+                                                <div class="testi-content">
+                                                    <p>We used to purchase it from village and it was cumbersome to get it.Now we have tried Buttter and Ghee from DesiSawad and quality is fantastic.</p>
+                                                    <div class="testi-meta">
+                                                        Shahid Iqbal
+                                                        <span>Johar Town Lahore</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="height: 197px;">
+                                            <div class="testimonial">
+                                                <div class="testi-content">
+                                                    <p>We need pure quality Desi Ghee to make a medicine for a patient and we got it from DesiSawad. We are regular customers now.</p>
+                                                    <div class="testi-meta">
+                                                        Hassan Ahmad
+                                                        <span>Lahore Cantt</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <section id="faqs">
+                                    <div class="container clearfix">
+                                        <h1>FAQs</h1>
+                                    </div>
+                                </section>
+                                <div class="container clearfix">
+                                    <!-- Post Content
+                                    ============================================= -->
+                                    <div class="postcontent nobottommargin clearfix">
+                                    <ul id="portfolio-filter" class="portfolio-filter clearfix"></ul>
+                                    <div class="clear"></div>
+                                    <div id="faqs" class="faqs">
+                                        <div class="toggle faq faq-marketplace faq-authors">
+                                            <div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-question-sign"></i>Is it 100% pure and natural?</div>
+                                            <div class="togglec">Yes. We collect pure milk from our own farm and then make Butter from it. Using traditional heating method, Butter is converted into Ghee slowly. There are no artifical flavours,ingredients added in it.</div>
+                                        </div>
+                                        <div class="toggle faq faq-authors faq-miscellaneous">
+                                            <div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-question-sign"></i>How much time I have to wait after placing order till I receieve the product?</div>
+                                            <div class="togglec">Ghee and Butter are prepared on demand so you can expect 3 to 7 days.</div>
+                                        </div>
+                                        <div class="toggle faq faq-miscellaneous">
+                                            <div class="togglet">
+                                                <i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-question-sign"></i>Can I order in bulk quantity?
+                                            </div>
+                                            <div class="togglec">Maximum 5kg only, because we believe in quality and delivering fresh product.</div>
+                                        </div>
+                                        <div class="toggle faq faq-marketplace faq-authors">
+                                            <div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-question-sign"></i>What is payment method?</div>
+                                            <div class="togglec">Payment on Delivery.</div>
+                                        </div>
+                                        <div class="toggle faq faq-affiliates faq-miscellaneous">
+                                            <div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-question-sign"></i>Can you deliver out of Lahore?</div>
+                                            <div class="togglec">If you know any means for delivery outside Lahore, let us know and you will have to pay for delivery cost.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                        </div>
+                        </section><!-- #content end -->
+                        <!-- Footer
+                        ============================================= -->
+                        <footer id="footer" class="dark">
+                            <div class="container">
+                                <!-- Footer Widgets
+                                ============================================= -->
+                                <div class="footer-widgets-wrap clearfix">
+                                    <div class="col_half">
+                                        <div class="widget clearfix">
+                                            <a href="#header"><img src="images/desisawad-icon-footer.png" alt="" class="footer-logo"></a>
+                                            <p> Our mission is to provide healthy products like Desi Ghee and Butter that are 100% natural, pure and impurity free that is safe for your family.</p>
+                                            <div class="clearfix" style="padding: 10px 0;">
+                                                <div class="col_half">
+                                                    <address class="nobottommargin">
+                                                    <abbr title="Connect With Us" style="display: inline-block;margin-bottom: 4px;"><strong>CONNECT WITH US:</strong></abbr><br>
+                                                </address>
+                                            </div>
+                                            <div class="col_half col_last">
+                                            </div>
+                                        </div>
+                                        <a href="https://www.facebook.com/DesiSawad-860958314055537/" class="social-icon si-small si-rounded topmargin-sm si-facebook">
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <a href="https://twitter.com/Desisawad" class="social-icon si-small si-rounded topmargin-sm si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="https://www.pinterest.com/desisawad" class="social-icon si-small si-rounded topmargin-sm si-gplus">
+                                            <i class="icon-pinterest"></i>
+                                            <i class="icon-pinterest"></i>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col_one_fourth">
+                                    <div class="fb-page" data-href="https://www.facebook.com/DesiSawad-860958314055537/" data-width="350" data-height="550" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                        <blockquote cite="https://www.facebook.com/DesiSawad-860958314055537/" class="fb-xfbml-parse-ignore">
+                                            <a href="https://www.facebook.com/DesiSawad-860958314055537/">DesiSawad</a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div id="sendmessage" class="col_one_fourth col_last">
+                                    <div class="widget quick-contact-widget clearfix">
+                                        <h4>Send Message</h4>
+                                        <div class="quick-contact-form-result"></div>
+                                        <form id="quick-contact-form" name="quick-contact-form" action="include/quickcontact.php" method="post" class="quick-contact-form nobottommargin" onsubmit="validEmail()">
+                                            <div class="form-process"></div>
+                                            <input checked type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name"/>
+                                            <input checked type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address"/>
+                                            <textarea checked class="required sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Message"></textarea>
+                                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                            <div class="g-recaptcha" data-sitekey="6LdiAhwUAAAAADNKK93ebhhV87JVDapR_olWQQDX"></div>
+                                            <input checked type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value=""/>
+                                            <button type="submit" style="margin-top: 10px !important;" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d nomargin" value="Submit">Send Email</button>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            </div><!-- .footer-widgets-wrap end -->
+                        </div>
+                        </footer><!-- #footer end -->
+                        </div><!-- #wrapper end -->
+                        <!-- Go To Top
+                        ============================================= -->
+                        <div id="gotoTop" class="icon-angle-up"></div>
+                        <!-- External JavaScripts
+                        ============================================= -->
+                        <script type="text/javascript" src="js/jquery.js"></script>
+                        <script type="text/javascript" src="js/plugins.js"></script>
+                        <!-- Footer Scripts
+                        ============================================= -->
+                        <script type="text/javascript" src="js/functions.js"></script>
+                    </body>
+                </html>
